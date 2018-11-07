@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "com/github/qaemma/common/common.proto";
+
+option java_multiple_files = true;
+option java_package = "com.qaemma.proto";
+option java_outer_classname = "CommonProto";
+
+package com.qaemma.proto.person;
+
+message Person {
+    common.Name name = 1;
+    int32 age = 2;
+}
